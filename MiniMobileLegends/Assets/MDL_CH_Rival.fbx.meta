@@ -1,48 +1,12 @@
 fileFormatVersion: 2
-guid: b63213618cae2a043888aa6f37e3414b
+guid: e92e7c35d59b96d40a74371cec9c7164
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable:
   - first:
-      74: 1668721775484596157
-    second: Turret_Bones|BaseAction
-  - first:
-      74: 4837786296237500225
-    second: Turret_Bones|CastleAction
-  - first:
-      74: 2080989897917768311
-    second: Turret_Bones|TopAction
-  - first:
-      74: 2671676341658621417
-    second: ANIM_Turret_Spawn
-  - first:
-      74: 2559080851759461687
-    second: Turret_Bones|Unit_BAction
-  - first:
-      74: 8789107084044480571
-    second: Turret_Bones|Unit_LAction
-  - first:
-      74: -7725349534955714864
-    second: Turret_Bones|Unit_RAction
-  - first:
-      74: -7960632157217142019
-    second: Turret_Bones|Unit_TAction
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MTL_Turret_Base
-    second: {fileID: 2100000, guid: 3199e1c6751dbcf43beae5d7fd1e4917, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MTL_Turret_Sphere
-    second: {fileID: 2100000, guid: a758499a2055959418c5184fda93e447, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MTL_Turret_Top
-    second: {fileID: 2100000, guid: 9b5ff819cda4f0d43ab00d534ed10fde, type: 2}
+      74: -4791504522942941401
+    second: Armature|Armature|mixamo.com|Layer0
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -69,36 +33,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: ANIM_Turret_Spawn
-      takeName: Turret_Bones|Turret_BonesAction
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 19
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -149,7 +84,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.08
+    globalScale: 8
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
@@ -158,7 +93,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
