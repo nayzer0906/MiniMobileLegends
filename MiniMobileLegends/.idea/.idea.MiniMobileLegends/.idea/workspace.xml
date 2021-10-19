@@ -30,12 +30,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jungle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Jungle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ApplicationStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
       </list>
     </option>
   </component>
@@ -81,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633874469220</updated>
       <workItem from="1633874480026" duration="3814000" />
-      <workItem from="1634414521197" duration="7125000" />
+      <workItem from="1634414521197" duration="8652000" />
     </task>
     <servers />
   </component>
