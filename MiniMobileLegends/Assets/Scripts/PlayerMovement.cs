@@ -1,10 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private FixedJoystick moveJoystick;
+    private Animator playerAnim;
+
+    private void Start()
+    {
+        playerAnim = GetComponent<Animator>();
+    }
+
     void Update()
     {
         UpdateMoveJoystick();
@@ -17,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 convertedXY = ConvertWithCamera(Camera.main.transform.position, hor, ver);
         Vector3 direction = new Vector3(convertedXY.x, 0, convertedXY.y).normalized;
         transform.Translate(direction * 0.2f, Space.World);
+        playerAnim.SetBool("Rival_Run", true);
     }
 
     private Vector2 ConvertWithCamera(Vector3 cameraPos, float hor, float ver)

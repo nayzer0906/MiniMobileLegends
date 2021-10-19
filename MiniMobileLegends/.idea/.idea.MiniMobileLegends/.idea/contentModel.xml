@@ -33,6 +33,15 @@
           <e p="Jungle.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
         </e>
+        <e p="Simple Toon" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="STCore.cginc" t="Include" />
+            <e p="STDefault.shader" t="Include" />
+            <e p="STFunctions.cginc" t="Include" />
+            <e p="STOutline.shader" t="Include" />
+            <e p="STTransparent.shader" t="Include" />
+          </e>
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">
