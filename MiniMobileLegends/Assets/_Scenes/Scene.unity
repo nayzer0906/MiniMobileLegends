@@ -269,19 +269,6 @@ CapsuleCollider:
   m_Height: 7
   m_Direction: 1
   m_Center: {x: 0, y: 3.5, z: 0}
---- !u!114 &549019932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549019929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62b2e836747d3224686b9f855799c2ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveJoystick: {fileID: 0}
 --- !u!54 &549019934
 Rigidbody:
   m_ObjectHideFlags: 0
