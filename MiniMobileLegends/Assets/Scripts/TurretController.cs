@@ -5,16 +5,11 @@ using UnityEngine;
 
 public class TurretController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject ring_particle;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        ring_particle.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,6 +19,7 @@ public class TurretController : MonoBehaviour
 
     private void ShootIntruders(Collider intruder)
     {
+        ring_particle.SetActive(true);
         Destroy(intruder.gameObject);
     }
 }
