@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
-public class AIController : MonoBehaviour
+public class EnemyAIController : MonoBehaviour
 {
     private int currentPoint = 0;
     private int currentWayPointsId;
@@ -43,7 +43,7 @@ public class AIController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "WayPoint")
+        if (other.tag == "EnemyWayPoint")
         {
             currentPoint++;
             SetWayPoint();

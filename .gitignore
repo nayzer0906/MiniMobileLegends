@@ -61,3 +61,6 @@ crashlytics-build.properties
 MiniMobileLegends/.idea/.idea.MiniMobileLegends/.idea/contentModel.xml
 MiniMobileLegends/.idea/.idea.MiniMobileLegends/.idea/workspace.xml
 MiniMobileLegends/.idea/.idea.MiniMobileLegends/.idea/indexLayout.xml
+*contentModel.xml
+*workspace.xml
+*indexLayout.xml
