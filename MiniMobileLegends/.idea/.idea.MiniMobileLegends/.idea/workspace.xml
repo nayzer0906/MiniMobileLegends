@@ -41,8 +41,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ApplicationStart.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TurretController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LookAtCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
       </list>
     </option>
   </component>

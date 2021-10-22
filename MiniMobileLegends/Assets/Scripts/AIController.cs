@@ -7,12 +7,14 @@ public class AIController : MonoBehaviour
 {
     private int currentPoint = 0;
     private int currentWayPointsId;
+    private Animator allyAnim;
     private NavMeshAgent currentNavMesh;
     private List<List<Transform>> wayPointsList = new List<List<Transform>>();
 
     public List<WayPointsController> wayPointsContList;
     void OnEnable()
     {
+        allyAnim = GetComponent<Animator>();
         currentNavMesh = GetComponent<NavMeshAgent>();
         
         foreach (var wayPointsController in wayPointsContList)
@@ -39,6 +41,7 @@ public class AIController : MonoBehaviour
             return;
 
         currentNavMesh.SetDestination(wayPointsList[currentWayPointsId][currentPoint].position);
+        allyAnim.SetBool("Rival_Run", true);
     }
 
     private void OnTriggerEnter(Collider other)

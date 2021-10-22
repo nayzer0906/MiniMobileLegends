@@ -28,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
             RotateCharacter();
             MoveCharacter();
         }
+        else
+        {
+            playerAnim.SetBool("Rival_Run", false);
+        }
     }
 
     public void TakeDamage(int damage)

@@ -32,11 +32,14 @@
           <e p="AIController.cs" t="Include" />
           <e p="ApplicationStart.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
+          <e p="CheckPointController.cs" t="Include" />
+          <e p="EnemyAIController.cs" t="Include" />
           <e p="HealthBar.cs" t="Include" />
           <e p="Jungle.cs" t="Include" />
           <e p="LookAtCamera.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="TurretController.cs" t="Include" />
+          <e p="WayPointsController.cs" t="Include" />
         </e>
         <e p="Simple Toon" t="Include">
           <e p="Shaders" t="Include">
