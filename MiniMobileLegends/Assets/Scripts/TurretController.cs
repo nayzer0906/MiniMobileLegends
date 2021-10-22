@@ -5,21 +5,26 @@ using UnityEngine;
 
 public class TurretController : MonoBehaviour
 {
-    [SerializeField] private GameObject ring_particle;
+    [SerializeField] private GameObject ringParticle;
 
     private void Start()
     {
-        ring_particle.SetActive(false);
+        ringParticle.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        ShootIntruders(other);
+        ringParticle.SetActive(true);
+        //ShootIntruders(other);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        ringParticle.SetActive(false);
     }
 
     private void ShootIntruders(Collider intruder)
     {
-        ring_particle.SetActive(true);
         Destroy(intruder.gameObject);
     }
 }

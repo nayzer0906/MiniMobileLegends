@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7085c519c4a2240459b6ba47dd260f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ring_particle: {fileID: 4223397122527991661}
+  ringParticle: {fileID: 4223397122527991661}
 --- !u!1001 &3829890339861630010
 PrefabInstance:
   m_ObjectHideFlags: 0

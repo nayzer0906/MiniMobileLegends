@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7085c519c4a2240459b6ba47dd260f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ring_particle: {fileID: 7843861471169861432}
+  ringParticle: {fileID: 7843861471169861432}
 --- !u!1 &2199522590919603445
 GameObject:
   m_ObjectHideFlags: 0
