@@ -34,6 +34,7 @@
           <e p="CameraFollow.cs" t="Include" />
           <e p="HealthBar.cs" t="Include" />
           <e p="Jungle.cs" t="Include" />
+          <e p="LookAtCamera.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="TurretController.cs" t="Include" />
         </e>
