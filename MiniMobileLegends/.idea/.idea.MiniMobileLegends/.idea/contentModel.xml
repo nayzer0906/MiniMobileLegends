@@ -29,7 +29,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AIController.cs" t="Include" />
           <e p="ApplicationStart.cs" t="Include" />
+          <e p="CameraFollow.cs" t="Include" />
+          <e p="HealthBar.cs" t="Include" />
           <e p="Jungle.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="TurretController.cs" t="Include" />

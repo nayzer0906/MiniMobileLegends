@@ -6,6 +6,7 @@ using UnityEngine;
 public class TurretController : MonoBehaviour
 {
     [SerializeField] private GameObject ringParticle;
+    private PlayerMovement player;
 
     private void Start()
     {
