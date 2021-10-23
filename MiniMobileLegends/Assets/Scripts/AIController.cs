@@ -10,6 +10,10 @@ public class AIController : MonoBehaviour
     private Animator allyAnim;
     private NavMeshAgent currentNavMesh;
     private List<List<Transform>> wayPointsList = new List<List<Transform>>();
+    
+    [SerializeField] private int maxHealth;
+    [SerializeField] private HealthBar healthBar;
+    private int currentHealth;
 
     public List<WayPointsController> wayPointsContList;
     void OnEnable()
@@ -46,10 +50,23 @@ public class AIController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.tag == "TurretEnemy")
+            TakeDamage(10);
+        
         if (other.tag == "WayPoint")
         {
             currentPoint++;
             SetWayPoint();
+        }
+    }
+    
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
+        if (currentHealth <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
