@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        TakeDamage(10);
+        if(other.tag == "TurretEnemy")
+            TakeDamage(10);
     }
 }

@@ -57,6 +57,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret_Ally
       objectReference: {fileID: 0}
+    - target: {fileID: 4726659971713421374, guid: eb613a460dbed634e84b14a60391abbc,
+        type: 3}
+      propertyPath: m_TagString
+      value: TurretAlly
+      objectReference: {fileID: 0}
     - target: {fileID: 5391838580127107716, guid: eb613a460dbed634e84b14a60391abbc,
         type: 3}
       propertyPath: m_RootOrder

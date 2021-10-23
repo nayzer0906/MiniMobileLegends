@@ -148,6 +148,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle_Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6198499115181134101, guid: 75ed09a67cd2f8046a81d7d0fc3ee99f,
+        type: 3}
+      propertyPath: m_TagString
+      value: TurretEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6723503391328275375, guid: 75ed09a67cd2f8046a81d7d0fc3ee99f,
         type: 3}
       propertyPath: m_RootOrder

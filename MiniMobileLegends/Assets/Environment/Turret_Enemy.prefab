@@ -57,6 +57,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turret_Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 154128740321888910, guid: 74df5e54984e37044ac8644efe543168,
+        type: 3}
+      propertyPath: m_TagString
+      value: TurretEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 677866413169365044, guid: 74df5e54984e37044ac8644efe543168,
         type: 3}
       propertyPath: m_RootOrder

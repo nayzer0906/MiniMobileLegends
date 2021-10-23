@@ -8,6 +8,8 @@ TagManager:
   - Ally
   - Enemy
   - EnemyWayPoint
+  - TurretAlly
+  - TurretEnemy
   layers:
   - Default
   - TransparentFX
