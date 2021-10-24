@@ -10,6 +10,9 @@ TagManager:
   - EnemyWayPoint
   - TurretAlly
   - TurretEnemy
+  - Bullet
+  - AllyTrigger
+  - EnemyTrigger
   layers:
   - Default
   - TransparentFX

@@ -7,13 +7,15 @@ public class EnemyAIController : MonoBehaviour
 {
     private int currentPoint = 0;
     private int currentWayPointsId;
+    private int currentHealth;
+    
     private Animator enemyAnim;
     private NavMeshAgent currentNavMesh;
     private List<List<Transform>> wayPointsList = new List<List<Transform>>();
     
     [SerializeField] private int maxHealth;
     [SerializeField] private HealthBar healthBar;
-    private int currentHealth;
+    [SerializeField] private ShootingController shootController;
 
     public List<WayPointsController> wayPointsContList;
     void OnEnable()
@@ -47,16 +49,39 @@ public class EnemyAIController : MonoBehaviour
         currentNavMesh.SetDestination(wayPointsList[currentWayPointsId][currentPoint].position);
         enemyAnim.SetBool("Rival_Run", true);
     }
+    
+    private void StopMoving()
+    {
+        currentNavMesh.Stop();
+    }
+
+    private void ResumeMoving()
+    {
+        currentNavMesh.Resume();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "TurretAlly")
+        if(other.tag == "TurretAlly" || other.tag == "Ally")
+        {
             TakeDamage(10);
+            StopMoving();
+            transform.LookAt(other.transform);
+            shootController.canShoot = true;
+        }
         
         if (other.tag == "EnemyWayPoint")
         {
             currentPoint++;
             SetWayPoint();
+        }
+    }
+    
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "TurretAlly" || other.tag == "Ally")
+        {
+            transform.LookAt(other.transform);
         }
     }
     
@@ -66,7 +91,7 @@ public class EnemyAIController : MonoBehaviour
         healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
         if (currentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 }

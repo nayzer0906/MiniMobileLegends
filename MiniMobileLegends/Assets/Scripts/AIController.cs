@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -7,13 +8,15 @@ public class AIController : MonoBehaviour
 {
     private int currentPoint = 0;
     private int currentWayPointsId;
+    private int currentHealth;
+    
     private Animator allyAnim;
     private NavMeshAgent currentNavMesh;
     private List<List<Transform>> wayPointsList = new List<List<Transform>>();
     
     [SerializeField] private int maxHealth;
     [SerializeField] private HealthBar healthBar;
-    private int currentHealth;
+    [SerializeField] private ShootingController shootController;
 
     public List<WayPointsController> wayPointsContList;
     void OnEnable()
@@ -48,25 +51,49 @@ public class AIController : MonoBehaviour
         allyAnim.SetBool("Rival_Run", true);
     }
 
+    private void StopMoving()
+    {
+        currentNavMesh.Stop();
+    }
+
+    private void ResumeMoving()
+    {
+        currentNavMesh.Resume();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "TurretEnemy")
+        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        {
             TakeDamage(10);
-        
+            StopMoving();
+            transform.LookAt(other.transform);
+            shootController.canShoot = true;
+            allyAnim.SetTrigger("Rival_Shoot");
+        }
+
         if (other.tag == "WayPoint")
         {
             currentPoint++;
             SetWayPoint();
         }
     }
-    
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        {
+            transform.LookAt(other.transform);
+        }
+    }
+
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
         if (currentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 }

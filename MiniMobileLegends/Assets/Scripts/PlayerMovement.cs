@@ -8,8 +8,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private FixedJoystick moveJoystick;
     [SerializeField] private int maxHealth;
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] private ShootingController shootController;
+
     private int currentHealth;
-    
     private Animator playerAnim;
     private Rigidbody playerRigidbody;
 
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
         if (currentHealth <= 0)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
     }
 
@@ -57,7 +58,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "TurretEnemy")
+        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        {
             TakeDamage(10);
+            transform.LookAt(other.transform);
+            shootController.canShoot = true;
+            playerAnim.SetTrigger("Rival_Shoot");
+        }
+    }
+    
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        {
+            transform.LookAt(other.transform);
+        }
     }
 }

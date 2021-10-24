@@ -189,6 +189,8 @@ MonoBehaviour:
     type: 3}
   monster_slime: {fileID: 1476245532301753474, guid: a0e6710197d4cfd4e87b6176edf84c41,
     type: 3}
+  creep_ally: {fileID: 0}
+  creep_enemy: {fileID: 0}
 --- !u!4 &229296150
 Transform:
   m_ObjectHideFlags: 0
@@ -363,6 +365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ally (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613483299017708808, guid: 1a8a1f673663d9340a2f2d9a51d87553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8094026608010544401, guid: 1a8a1f673663d9340a2f2d9a51d87553,
         type: 3}
@@ -623,6 +630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ally (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613483299017708808, guid: 1a8a1f673663d9340a2f2d9a51d87553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8094026608010544401, guid: 1a8a1f673663d9340a2f2d9a51d87553,
         type: 3}
@@ -1533,6 +1545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ally (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5613483299017708808, guid: 1a8a1f673663d9340a2f2d9a51d87553,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8094026608010544401, guid: 1a8a1f673663d9340a2f2d9a51d87553,
         type: 3}
