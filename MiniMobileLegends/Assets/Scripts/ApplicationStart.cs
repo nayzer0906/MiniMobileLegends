@@ -11,12 +11,28 @@ public class ApplicationStart : MonoBehaviour
     public Transform monster_lizard;
     public Transform monster_crab;
     public Transform monster_slime;
+    public Transform creep_ally;
+    public Transform creep_enemy;
     void Start()
     {
         StartCoroutine(TurtleSpawn());
         StartCoroutine(LizardSpawn());
         StartCoroutine(CrabSpawn());
         StartCoroutine(SlimeSpawn());
+        StartCoroutine(CreepSpawn());
+    }
+    
+    IEnumerator CreepSpawn()
+    {
+        yield return new WaitForSeconds(12f);
+        Debug.Log("12 seconds passed...");
+        Instantiate(creep_ally, new Vector3(-75f, creep_ally.position.y, -75f), new Quaternion(0f, 40f, 0f, 0f));
+        Instantiate(creep_ally, new Vector3(-65f, creep_ally.position.y, -85f), new Quaternion(0f, 90f, 0f, 0f));
+        Instantiate(creep_ally, new Vector3(-85f, creep_ally.position.y, -65f), new Quaternion(0f, 0f, 0f, 0f));
+        
+        Instantiate(creep_enemy, new Vector3(75f, creep_enemy.position.y, 75f), new Quaternion(0f, -140f, 0f, 0f));
+        Instantiate(creep_enemy, new Vector3(65f, creep_enemy.position.y, 85f), new Quaternion(0f, -90f, 0f, 0f));
+        Instantiate(creep_enemy, new Vector3(85f, creep_enemy.position.y, 65f), new Quaternion(0f, -180f, 0f, 0f));
     }
 
     IEnumerator TurtleSpawn()
