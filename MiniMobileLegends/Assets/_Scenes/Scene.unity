@@ -189,8 +189,10 @@ MonoBehaviour:
     type: 3}
   monster_slime: {fileID: 1476245532301753474, guid: a0e6710197d4cfd4e87b6176edf84c41,
     type: 3}
-  creep_ally: {fileID: 0}
-  creep_enemy: {fileID: 0}
+  creep_ally: {fileID: 6843152884314887864, guid: 2fb84ca8d11505f49b18096017483b98,
+    type: 3}
+  creep_enemy: {fileID: 8606163621562456425, guid: 5cabe434061cf414db7e8538caa3ab50,
+    type: 3}
 --- !u!4 &229296150
 Transform:
   m_ObjectHideFlags: 0
