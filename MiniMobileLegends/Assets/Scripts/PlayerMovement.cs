@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -13,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private int currentHealth;
     private Animator playerAnim;
     private Rigidbody playerRigidbody;
+    
+    private bool isCooldown = false;
 
     private void Start()
     {
@@ -35,13 +38,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public IEnumerator TakeDamage(int damage)
     {
+        isCooldown = true;
         currentHealth -= damage;
         healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
+
+        yield return new WaitForSeconds(0.5f);
+        isCooldown = false;
+        
         if (currentHealth <= 0)
         {
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
     }
 
@@ -69,9 +77,10 @@ public class PlayerMovement : MonoBehaviour
     
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        if (other.tag == "TurretEnemy")
         {
-            transform.LookAt(other.transform);
+            if (!isCooldown)
+                StartCoroutine(TakeDamage(10));
         }
     }
 }
