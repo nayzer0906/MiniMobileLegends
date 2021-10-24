@@ -33,6 +33,7 @@
           <e p="ApplicationStart.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CheckPointController.cs" t="Include" />
+          <e p="CreepController.cs" t="Include" />
           <e p="EnemyAIController.cs" t="Include" />
           <e p="HealthBar.cs" t="Include" />
           <e p="Jungle.cs" t="Include" />
