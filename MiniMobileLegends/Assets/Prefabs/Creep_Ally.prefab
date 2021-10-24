@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 9015873386607639533}
   - component: {fileID: 6064118477299215627}
   - component: {fileID: 5210869520020130508}
-  - component: {fileID: 2561050433416781037}
+  - component: {fileID: 3585630292352806613}
   m_Layer: 0
   m_Name: Creep_Ally
   m_TagString: Untagged
@@ -190,7 +190,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2561050433416781037
+--- !u!114 &3585630292352806613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,10 +199,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6796454211980527498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fde1b2e2c0e0cc4b953610114f4f3b1, type: 3}
+  m_Script: {fileID: 11500000, guid: d4929f3e0f744bc44a94486481ae5d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  maxHealth: 50
+  healthBar: {fileID: 2544673654986724382}
+  wayPointsContList: []
 --- !u!1001 &3001549999783771908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -328,3 +330,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3001549999783771908}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2544673654986724382 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 790340943460444954, guid: 2288aea9727b9374f8636d704af91c73,
+    type: 3}
+  m_PrefabInstance: {fileID: 3001549999783771908}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f948dbe6097e1cc40bec45b7d06d4ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
