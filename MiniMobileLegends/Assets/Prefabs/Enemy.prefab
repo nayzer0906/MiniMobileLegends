@@ -45,7 +45,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &4415289394219713611
 CapsuleCollider:
@@ -291,16 +291,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2532787392572347236, guid: e5bde065d09c37e4a879fbd0b03e5eae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9de9cb236f24a034e9ba7730609dafa2, type: 2}
+    - target: {fileID: -1864020529611134980, guid: e5bde065d09c37e4a879fbd0b03e5eae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e5bde065d09c37e4a879fbd0b03e5eae,
         type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5377317819421907781, guid: e5bde065d09c37e4a879fbd0b03e5eae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b5ff819cda4f0d43ab00d534ed10fde, type: 2}
     - target: {fileID: 5866666021909216657, guid: e5bde065d09c37e4a879fbd0b03e5eae,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 71e1a52ae89d0874097532d4dea912f2, type: 2}
+    - target: {fileID: 8265649631063730100, guid: e5bde065d09c37e4a879fbd0b03e5eae,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9de9cb236f24a034e9ba7730609dafa2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5bde065d09c37e4a879fbd0b03e5eae, type: 3}
 --- !u!1 &8622962788403480758 stripped
