@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private FixedJoystick moveJoystick;
     [SerializeField] private int maxHealth;
     [SerializeField] private HealthBar healthBar;
-    [SerializeField] private ShootingController shootController;
 
     private int currentHealth;
     private Animator playerAnim;
@@ -70,7 +69,6 @@ public class PlayerMovement : MonoBehaviour
         {
             TakeDamage(10);
             transform.LookAt(other.transform);
-            shootController.canShoot = true;
             playerAnim.SetTrigger("Rival_Shoot");
         }
     }

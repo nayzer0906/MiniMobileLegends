@@ -15,7 +15,6 @@ public class EnemyAIController : MonoBehaviour
     
     [SerializeField] private int maxHealth;
     [SerializeField] private HealthBar healthBar;
-    [SerializeField] private ShootingController shootController;
 
     public List<WayPointsController> wayPointsContList;
     void OnEnable()
@@ -67,7 +66,6 @@ public class EnemyAIController : MonoBehaviour
             TakeDamage(10);
             StopMoving();
             transform.LookAt(other.transform);
-            shootController.canShoot = true;
         }
         
         if (other.tag == "EnemyWayPoint")

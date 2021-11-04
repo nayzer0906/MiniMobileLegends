@@ -16,7 +16,6 @@ public class AIController : MonoBehaviour
     
     [SerializeField] private int maxHealth;
     [SerializeField] private HealthBar healthBar;
-    [SerializeField] private ShootingController shootController;
 
     public List<WayPointsController> wayPointsContList;
     void OnEnable()
@@ -68,7 +67,6 @@ public class AIController : MonoBehaviour
             TakeDamage(10);
             StopMoving();
             transform.LookAt(other.transform);
-            shootController.canShoot = true;
             allyAnim.SetTrigger("Rival_Shoot");
         }
 
