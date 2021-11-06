@@ -19,6 +19,7 @@
           <e p="LookAtCamera.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PlayerSetup.cs" t="Include" />
+          <e p="RotateMap.cs" t="Include" />
           <e p="TurretController.cs" t="Include" />
           <e p="WayPointsController.cs" t="Include" />
         </e>
