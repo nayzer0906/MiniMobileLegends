@@ -16,6 +16,7 @@
           <e p="GameManager.cs" t="Include" />
           <e p="HealthBar.cs" t="Include" />
           <e p="Jungle.cs" t="Include" />
+          <e p="LoadScreen.cs" t="Include" />
           <e p="LookAtCamera.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PlayerSetup.cs" t="Include" />
