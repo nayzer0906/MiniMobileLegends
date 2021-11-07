@@ -32,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Developer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/RotateMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/ChooseTeamColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/LoadScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerSetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,6 +55,7 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/RotateMap.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/LoadScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/ChooseTeamColor.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +106,7 @@
       <workItem from="1634755824808" duration="4932000" />
       <workItem from="1634998141338" duration="4414000" />
       <workItem from="1636051026879" duration="7011000" />
-      <workItem from="1636138843761" duration="4737000" />
+      <workItem from="1636138843761" duration="14596000" />
     </task>
     <servers />
   </component>

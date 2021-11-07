@@ -10,6 +10,7 @@
           <e p="ApplicationStart.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CheckPointController.cs" t="Include" />
+          <e p="ChooseTeamColor.cs" t="Include" />
           <e p="CreepController.cs" t="Include" />
           <e p="Developer.cs" t="Include" />
           <e p="EnemyAIController.cs" t="Include" />
