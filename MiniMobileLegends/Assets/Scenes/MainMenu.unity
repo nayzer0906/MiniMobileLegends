@@ -1803,6 +1803,7 @@ GameObject:
   - component: {fileID: 818111469}
   - component: {fileID: 818111471}
   - component: {fileID: 818111470}
+  - component: {fileID: 818111472}
   m_Layer: 5
   m_Name: CHOOSE COLOR PANEL
   m_TagString: Untagged
@@ -1873,6 +1874,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818111468}
   m_CullTransparentMesh: 0
+--- !u!114 &818111472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818111468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8dbeb10e085fd4087e797e3554e9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {fileID: 1915707487}
+  - {fileID: 1601150107}
+  - {fileID: 1022114960}
+  - {fileID: 1219373842}
+  hoodieColor: {fileID: 1890198092}
 --- !u!1 &827789025
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,19 +2350,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1022114958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1890198092}
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: fb422419743e0414caf685d9bcf8808d,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1065279471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2763,19 +2770,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1219373840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1890198092}
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 9de9cb236f24a034e9ba7730609dafa2,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1306312367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,19 +3243,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1601150105}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1890198092}
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 86839665477366345a0fc7decc292a9a,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &1627061349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5623,30 +5606,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857586603}
   m_CullTransparentMesh: 0
---- !u!1 &1890198090 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4966994332581084997, guid: e5bde065d09c37e4a879fbd0b03e5eae,
-    type: 3}
-  m_PrefabInstance: {fileID: 2045455559}
-  m_PrefabAsset: {fileID: 0}
 --- !u!137 &1890198092 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 5377317819421907781, guid: e5bde065d09c37e4a879fbd0b03e5eae,
     type: 3}
   m_PrefabInstance: {fileID: 2045455559}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1890198093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890198090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf8dbeb10e085fd4087e797e3554e9fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1915707483
 GameObject:
   m_ObjectHideFlags: 0
@@ -5764,19 +5729,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1915707485}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1890198092}
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 9b5ff819cda4f0d43ab00d534ed10fde,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2002236780
 GameObject:
   m_ObjectHideFlags: 0

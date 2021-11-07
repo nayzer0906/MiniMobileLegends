@@ -6,15 +6,35 @@ using UnityEngine.UI;
 
 public class ChooseTeamColor : MonoBehaviour
 {
+    [SerializeField]
+    private List<Button> colors = new List<Button>();
+    [SerializeField]
     private SkinnedMeshRenderer hoodieColor;
 
-    private void OnEnable()
+    private void ChangeHoodieColor(int color)
     {
-        hoodieColor = GetComponent<SkinnedMeshRenderer>();
+        switch (color)
+        {
+            case 0:
+                hoodieColor.material.color = Color.red;
+                break;
+            case 1:
+                hoodieColor.material.color = Color.green;
+                break;
+            case 2:
+                hoodieColor.material.color = Color.blue;
+                break;
+            case 3:
+                hoodieColor.material.color = Color.yellow;
+                break;
+        }
     }
 
-    private void Awake()
+    public void Start()
     {
-        
+        foreach (var color in colors)
+        {
+            color.onClick.AddListener(() => ChangeHoodieColor(colors.IndexOf(color)));
+        }
     }
 }
