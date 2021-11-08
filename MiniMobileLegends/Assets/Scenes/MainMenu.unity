@@ -130,7 +130,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 48611039}
-  - component: {fileID: 48611040}
   m_Layer: 5
   m_Name: ENEMY TEAM
   m_TagString: Untagged
@@ -158,31 +157,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &48611040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 48611038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bddb80083d090843b5100d0610cd6d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colors:
-  - {fileID: 1306312370}
-  - {fileID: 519035763}
-  - {fileID: 286923487}
-  - {fileID: 672610350}
-  hoodieColor: {fileID: 373784664}
-  chosenColorTxt: {fileID: 1826651009}
-  teamColorChoicePnl: {fileID: 1634860303}
-  loadingScreen: {fileID: 175597089}
-  enemyBackground: {fileID: 827728746}
-  enemyMesh: {fileID: 1381383393}
-  enemyColorChoosePnl: {fileID: 574059892}
-  map: {fileID: 2144311179}
 --- !u!1 &71148173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,6 +1523,7 @@ GameObject:
   - component: {fileID: 574059893}
   - component: {fileID: 574059895}
   - component: {fileID: 574059894}
+  - component: {fileID: 574059896}
   m_Layer: 5
   m_Name: ENEMY COLOR PANEL
   m_TagString: Untagged
@@ -1618,6 +1593,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574059892}
   m_CullTransparentMesh: 0
+--- !u!114 &574059896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574059892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bddb80083d090843b5100d0610cd6d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {fileID: 1306312370}
+  - {fileID: 519035763}
+  - {fileID: 286923487}
+  - {fileID: 672610350}
+  hoodieColor: {fileID: 373784664}
+  chosenColorTxt: {fileID: 1826651009}
+  teamColorChoicePnl: {fileID: 1634860303}
+  loadingScreen: {fileID: 175597089}
+  enemyBackground: {fileID: 827728746}
+  enemyMesh: {fileID: 1381383393}
+  enemyColorChoosePnl: {fileID: 574059892}
+  map: {fileID: 2144311179}
 --- !u!1 &658053150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,6 +1875,7 @@ GameObject:
   - component: {fileID: 818111469}
   - component: {fileID: 818111471}
   - component: {fileID: 818111470}
+  - component: {fileID: 818111472}
   m_Layer: 5
   m_Name: CHOOSE COLOR PANEL
   m_TagString: Untagged
@@ -1944,6 +1945,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818111468}
   m_CullTransparentMesh: 0
+--- !u!114 &818111472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818111468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8dbeb10e085fd4087e797e3554e9fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {fileID: 1915707487}
+  - {fileID: 1601150107}
+  - {fileID: 1022114960}
+  - {fileID: 1219373842}
+  hoodieColor: {fileID: 1890198092}
+  confirmButton: {fileID: 1857586605}
+  chosenColorTxt: {fileID: 1826651009}
+  teamColorChoicePnl: {fileID: 1634860303}
 --- !u!1 &827728746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,7 +3045,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426355460}
-  - component: {fileID: 1426355461}
   m_Layer: 5
   m_Name: ALLY TEAM
   m_TagString: Untagged
@@ -3051,27 +3072,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1426355461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1426355459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf8dbeb10e085fd4087e797e3554e9fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  colors:
-  - {fileID: 1915707487}
-  - {fileID: 1601150107}
-  - {fileID: 1022114960}
-  - {fileID: 1219373842}
-  hoodieColor: {fileID: 1890198092}
-  confirmButton: {fileID: 1857586605}
-  chosenColorTxt: {fileID: 1826651009}
-  teamColorChoicePnl: {fileID: 1634860303}
 --- !u!1 &1431217144
 GameObject:
   m_ObjectHideFlags: 0
@@ -5869,9 +5869,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 500, y: 500}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: 500, y: 480}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1857586605
 MonoBehaviour:
   m_ObjectHideFlags: 0

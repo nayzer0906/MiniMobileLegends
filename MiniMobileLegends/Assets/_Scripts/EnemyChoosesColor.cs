@@ -24,7 +24,7 @@ public class EnemyChoosesColor : MonoBehaviour
     public GameObject enemyColorChoosePnl;
     public GameObject map;
 
-    private void Start()
+    private void OnEnable()
     {
         EnemyChooses();
     }
