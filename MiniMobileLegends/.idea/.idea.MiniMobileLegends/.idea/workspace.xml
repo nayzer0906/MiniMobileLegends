@@ -30,12 +30,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Developer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/RotateMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.1.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/ChooseTeamColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/LoadScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerSetup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/EnemyChoosesColor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,7 +56,9 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/RotateMap.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/SceneManager.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/LoadScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/XSprite.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ChooseTeamColor.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyChoosesColor.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +109,7 @@
       <workItem from="1634755824808" duration="4932000" />
       <workItem from="1634998141338" duration="4414000" />
       <workItem from="1636051026879" duration="7011000" />
-      <workItem from="1636138843761" duration="18773000" />
+      <workItem from="1636138843761" duration="31301000" />
     </task>
     <servers />
   </component>
