@@ -34,7 +34,7 @@ public class EnemyChoosesColor : MonoBehaviour
         foreach (var color in colors)
         {
             hoodieColor.material.color = color.color;
-            await Task.Delay(Random.Range(2000, 4000));
+            await Task.Delay(Random.Range(1000, 2000));
         }
         teamColorChoicePnl.gameObject.SetActive(true);
         OnTeamColorChosen();
