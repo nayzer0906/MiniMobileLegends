@@ -46,6 +46,7 @@ MonoBehaviour:
   moveJoystick: {fileID: 0}
   maxHealth: 100
   healthBar: {fileID: 5444178689024266127}
+  hoodie: {fileID: 9006364736457882122}
 --- !u!114 &4416297251878107645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +314,12 @@ GameObject:
 --- !u!4 &3591517825133774500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e5bde065d09c37e4a879fbd0b03e5eae,
+    type: 3}
+  m_PrefabInstance: {fileID: 3917317021802979663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &9006364736457882122 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5377317819421907781, guid: e5bde065d09c37e4a879fbd0b03e5eae,
     type: 3}
   m_PrefabInstance: {fileID: 3917317021802979663}
   m_PrefabAsset: {fileID: 0}

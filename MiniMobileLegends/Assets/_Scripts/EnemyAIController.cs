@@ -18,13 +18,14 @@ public class EnemyAIController : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
 
     public List<WayPointsController> wayPointsContList;
+    private EnemyChoosesColor _enemyChoosesColor;
     private bool isCooldown = false;
     void OnEnable()
     {
         currentHealth = maxHealth;
         enemyAnim = GetComponent<Animator>();
         currentNavMesh = GetComponent<NavMeshAgent>();
-        
+
         foreach (var wayPointsController in wayPointsContList)
         {
             wayPointsList.Add(wayPointsController.GetWayPoints());

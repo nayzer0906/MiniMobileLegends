@@ -20,12 +20,14 @@ public class ChooseTeamColor : MonoBehaviour
     private Image teamColorChoicePnl;
 
     private EnemyChoosesColor _enemyChoosesColor;
+    public Color chosenTeamColor;
     [SerializeField]
     //private Sprite xSprite;
 
     private void OnEnable()
     {
-        hoodieColor.material.color = Color.blue;
+        chosenTeamColor = Color.blue;
+        hoodieColor.material.color = chosenTeamColor;
         _enemyChoosesColor = new EnemyChoosesColor();
     }
 
@@ -34,37 +36,38 @@ public class ChooseTeamColor : MonoBehaviour
         switch (color)
         {
             case 0:
-                hoodieColor.material.color = Color.red;
+                chosenTeamColor = Color.red;
                 break;
             case 1:
-                hoodieColor.material.color = Color.green;
+                chosenTeamColor = Color.green;
                 break;
             case 2:
-                hoodieColor.material.color = Color.blue;
+                chosenTeamColor = Color.blue;
                 break;
             case 3:
-                hoodieColor.material.color = Color.yellow;
+                chosenTeamColor = Color.yellow;
                 break;
         }
+        hoodieColor.material.color = chosenTeamColor;
     }
 
     private async void OnTeamColorChosen()
     {
         string yourTeamTxt = "YOUR TEAM: ";
         teamColorChoicePnl.gameObject.SetActive(true);
-        if (hoodieColor.material.color == Color.blue)
+        if (chosenTeamColor == Color.blue)
         {
             chosenColorTxt.text = yourTeamTxt + "BLUE";
             teamColorChoicePnl.color = Color.blue;
             //_enemyChoosesColor.colors[2].sprite = xSprite;
         }
-        else if (hoodieColor.material.color == Color.red)
+        else if (chosenTeamColor == Color.red)
         {
             chosenColorTxt.text = yourTeamTxt + "RED";
             teamColorChoicePnl.color = Color.red;
             //_enemyChoosesColor.colors[0].sprite = xSprite;
         }
-        else if (hoodieColor.material.color == Color.green)
+        else if (chosenTeamColor == Color.green)
         {
             chosenColorTxt.text = yourTeamTxt + "GREEN";
             teamColorChoicePnl.color = Color.green;

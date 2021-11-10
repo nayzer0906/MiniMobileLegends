@@ -24,8 +24,11 @@ public class EnemyChoosesColor : MonoBehaviour
     public GameObject enemyColorChoosePnl;
     public GameObject map;
 
+    public Color chosenEnemyColor;
+
     private void OnEnable()
     {
+        hoodieColor.material.color = chosenEnemyColor;
         EnemyChooses();
     }
 
@@ -36,6 +39,7 @@ public class EnemyChoosesColor : MonoBehaviour
             hoodieColor.material.color = color.color;
             await Task.Delay(Random.Range(1000, 2000));
         }
+        chosenEnemyColor = hoodieColor.material.color;
         teamColorChoicePnl.gameObject.SetActive(true);
         OnTeamColorChosen();
     }
@@ -44,17 +48,17 @@ public class EnemyChoosesColor : MonoBehaviour
     {
         string yourTeamTxt = "ENEMY TEAM: ";
         teamColorChoicePnl.gameObject.SetActive(true);
-        if (hoodieColor.material.color == Color.blue)
+        if (chosenEnemyColor == Color.blue)
         {
             chosenColorTxt.text = yourTeamTxt + "BLUE";
             teamColorChoicePnl.color = Color.blue;
         }
-        else if (hoodieColor.material.color == Color.red)
+        else if (chosenEnemyColor == Color.red)
         {
             chosenColorTxt.text = yourTeamTxt + "RED";
             teamColorChoicePnl.color = Color.red;
         }
-        else if (hoodieColor.material.color == Color.green)
+        else if (chosenEnemyColor == Color.green)
         {
             chosenColorTxt.text = yourTeamTxt + "GREEN";
             teamColorChoicePnl.color = Color.green;
