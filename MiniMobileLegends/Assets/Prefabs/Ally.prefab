@@ -75,7 +75,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthBar: {fileID: 1252646524945867979}
-  shootController: {fileID: 0}
   wayPointsContList: []
 --- !u!1001 &5634656312934200545
 PrefabInstance:
@@ -192,6 +191,21 @@ PrefabInstance:
     - target: {fileID: 3444274614269725645, guid: 7eab77cd1e49eaf40b40071c710c22bc,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196574687312249131, guid: 7eab77cd1e49eaf40b40071c710c22bc,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196574687312249131, guid: 7eab77cd1e49eaf40b40071c710c22bc,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8008375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5196574687312249131, guid: 7eab77cd1e49eaf40b40071c710c22bc,
+        type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
