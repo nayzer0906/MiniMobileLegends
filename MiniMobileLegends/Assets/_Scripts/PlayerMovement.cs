@@ -65,11 +65,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        if(other.tag == "TurretEnemy")
         {
-            TakeDamage(10);
             transform.LookAt(other.transform);
-            playerAnim.SetTrigger("Rival_Shoot");
+            //playerAnim.SetTrigger("Rival_Shoot");
         }
     }
     

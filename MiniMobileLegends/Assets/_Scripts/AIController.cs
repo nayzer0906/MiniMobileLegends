@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -18,8 +19,10 @@ public class AIController : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
 
     public List<WayPointsController> wayPointsContList;
+    private bool isCooldown = false;
     void OnEnable()
     {
+        currentHealth = maxHealth;
         allyAnim = GetComponent<Animator>();
         currentNavMesh = GetComponent<NavMeshAgent>();
         
@@ -62,12 +65,11 @@ public class AIController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        if(other.tag == "TurretEnemy")
         {
-            TakeDamage(10);
-            StopMoving();
+            //StopMoving();
             transform.LookAt(other.transform);
-            allyAnim.SetTrigger("Rival_Shoot");
+            //allyAnim.SetTrigger("Rival_Shoot");
         }
 
         if (other.tag == "WayPoint")
@@ -79,19 +81,25 @@ public class AIController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "TurretEnemy" || other.tag == "Enemy")
+        if (other.tag == "TurretEnemy")
         {
-            transform.LookAt(other.transform);
+            if (!isCooldown)
+                StartCoroutine(TakeDamage(10));
         }
     }
 
-    public void TakeDamage(int damage)
+    public IEnumerator TakeDamage(int damage)
     {
+        isCooldown = true;
         currentHealth -= damage;
         healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
+
+        yield return new WaitForSeconds(0.5f);
+        isCooldown = false;
+        
         if (currentHealth <= 0)
         {
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }

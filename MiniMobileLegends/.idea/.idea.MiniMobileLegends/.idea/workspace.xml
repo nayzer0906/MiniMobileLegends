@@ -59,6 +59,9 @@
         <option value="$PROJECT_DIR$/Assets/XSprite.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ChooseTeamColor.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyChoosesColor.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyAIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/AIController.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +113,7 @@
       <workItem from="1634998141338" duration="4414000" />
       <workItem from="1636051026879" duration="7011000" />
       <workItem from="1636138843761" duration="32386000" />
+      <workItem from="1636543697877" duration="2751000" />
     </task>
     <servers />
   </component>

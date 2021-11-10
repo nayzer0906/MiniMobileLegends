@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -17,8 +18,10 @@ public class EnemyAIController : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
 
     public List<WayPointsController> wayPointsContList;
+    private bool isCooldown = false;
     void OnEnable()
     {
+        currentHealth = maxHealth;
         enemyAnim = GetComponent<Animator>();
         currentNavMesh = GetComponent<NavMeshAgent>();
         
@@ -61,10 +64,9 @@ public class EnemyAIController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "TurretAlly" || other.tag == "Ally")
+        if(other.tag == "TurretAlly")
         {
-            TakeDamage(10);
-            StopMoving();
+            //StopMoving();
             transform.LookAt(other.transform);
         }
         
@@ -77,19 +79,25 @@ public class EnemyAIController : MonoBehaviour
     
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "TurretAlly" || other.tag == "Ally")
+        if(other.tag == "TurretAlly")
         {
-            transform.LookAt(other.transform);
+            if (!isCooldown)
+                StartCoroutine(TakeDamage(10));
         }
     }
     
-    public void TakeDamage(int damage)
+    public IEnumerator TakeDamage(int damage)
     {
+        isCooldown = true;
         currentHealth -= damage;
         healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
+
+        yield return new WaitForSeconds(0.5f);
+        isCooldown = false;
+        
         if (currentHealth <= 0)
         {
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
