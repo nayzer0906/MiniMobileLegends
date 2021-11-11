@@ -7,24 +7,26 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 0.5f;
 
     [SerializeField] private FixedJoystick moveJoystick;
-    [SerializeField] private int maxHealth;
-    [SerializeField] private HealthBar healthBar;
+    [SerializeField] public HealthBar healthBar;
+    private bool isAlive = false;
 
-    private int currentHealth;
-    private Animator playerAnim;
     private Rigidbody playerRigidbody;
-    
-    private bool isCooldown = false;
-
-    private void Start()
+    private Animator playerAnim;
+    private PlayerController playerController;
+    private Transform playerTransform;
+    public void Init()
     {
-        playerRigidbody = GetComponent<Rigidbody>();
-        playerAnim = GetComponent<Animator>();
-        currentHealth = maxHealth;
+        playerRigidbody = transform.GetChild(0).GetComponent<Rigidbody>();
+        playerAnim = transform.GetChild(0).GetComponent<Animator>();
+        playerController = GetComponent<PlayerController>();
+        playerTransform = transform.GetChild(0).transform;
+        isAlive = true;
     }
 
     private void FixedUpdate()
     {
+        if (!isAlive) return;
+
         if (moveJoystick.isDraging)
         {
             playerAnim.SetBool("Rival_Run", true);
@@ -37,37 +39,24 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public IEnumerator TakeDamage(int damage)
-    {
-        isCooldown = true;
-        currentHealth -= damage;
-        healthBar.UpdateHealth((float)currentHealth/ (float)maxHealth);
-
-        yield return new WaitForSeconds(0.5f);
-        isCooldown = false;
-        
-        if (currentHealth <= 0)
-        {
-            Destroy(this.gameObject);
-        }
-    }
+    
 
     private void RotateCharacter()
     {
         var charLook = new Vector3(moveJoystick.Horizontal, 0f, moveJoystick.Vertical);
-        transform.rotation = Quaternion.LookRotation(charLook);
+        playerTransform.rotation = Quaternion.LookRotation(charLook);
     }
 
     private void MoveCharacter()
     {
-        playerRigidbody.velocity = this.transform.forward * moveSpeed;
+        playerRigidbody.velocity = playerTransform.forward * moveSpeed;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "TurretEnemy")
         {
-            transform.LookAt(other.transform);
+            playerTransform.LookAt(other.transform);
             //playerAnim.SetTrigger("Rival_Shoot");
         }
     }
@@ -76,8 +65,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.tag == "TurretEnemy")
         {
-            if (!isCooldown)
-                StartCoroutine(TakeDamage(10));
+            if (!playerController.IsCooldown())
+                StartCoroutine(playerController.TakeDamage(10));
         }
     }
 }
