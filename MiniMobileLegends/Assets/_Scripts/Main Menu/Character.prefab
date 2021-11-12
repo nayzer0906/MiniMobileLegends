@@ -1264,7 +1264,7 @@ GameObject:
   - component: {fileID: 7203927596375871264}
   - component: {fileID: 4558389397781832229}
   m_Layer: 0
-  m_Name: mdl_ch_rival_hoodie.001
+  m_Name: Hoodie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1302,7 +1302,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4af8de032818fcd418b4b42e2dc1c311, type: 2}
+  - {fileID: 2100000, guid: 88b9b34e4e7c0344ba80222732b086a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -10,20 +10,27 @@
           <e p="ApplicationStart.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CheckPointController.cs" t="Include" />
-          <e p="ChooseTeamColor.cs" t="Include" />
           <e p="CreepController.cs" t="Include" />
           <e p="EnemyAIController.cs" t="Include" />
-          <e p="EnemyChoosesColor.cs" t="Include" />
           <e p="HealthBar.cs" t="Include" />
           <e p="Jungle.cs" t="Include" />
-          <e p="LoadScreen.cs" t="Include" />
           <e p="LookAtCamera.cs" t="Include" />
+          <e p="Main Menu" t="Include">
+            <e p="ChooseTeamColor.cs" t="Include" />
+            <e p="EnemyChoosesColor.cs" t="Include" />
+            <e p="EnemyColorMenu.cs" t="Include" />
+            <e p="LoadScreen.cs" t="Include" />
+            <e p="MainMenu.cs" t="Include" />
+            <e p="Menu.cs" t="Include" />
+            <e p="MenuManager.cs" t="Include" />
+            <e p="RotateMap.cs" t="Include" />
+            <e p="TeamColorMenu.cs" t="Include" />
+          </e>
           <e p="Managers" t="Include">
             <e p="GameManager.cs" t="Include" />
           </e>
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PlayerSetup.cs" t="Include" />
-          <e p="RotateMap.cs" t="Include" />
           <e p="TurretController.cs" t="Include" />
           <e p="WayPointsController.cs" t="Include" />
         </e>
