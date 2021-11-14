@@ -2,11 +2,11 @@
 
 public static class MenuManager
 {
-   [SerializeField] private static GameObject mainMenu, teamColorMenu, enemyColorMenu;
-   [SerializeField] private static bool isInitialized;
+   private static GameObject mainMenu, teamColorMenu, enemyColorMenu;
+   private static bool isInitialized;
    public static void Init()
    {
-      GameObject canvas = GameObject.FindObjectOfType<Canvas>().gameObject;
+      GameObject canvas = GameObject.Find("Canvas");
       mainMenu = canvas.transform.Find("Main Menu").gameObject;
       teamColorMenu = canvas.transform.Find("Team Color Menu").gameObject;
       enemyColorMenu = canvas.transform.Find("Enemy Color Menu").gameObject;

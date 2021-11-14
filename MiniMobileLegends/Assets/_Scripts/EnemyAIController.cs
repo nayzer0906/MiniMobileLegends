@@ -18,7 +18,6 @@ public class EnemyAIController : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
 
     public List<WayPointsController> wayPointsContList;
-    private EnemyChoosesColor _enemyChoosesColor;
     private bool isCooldown = false;
     void OnEnable()
     {

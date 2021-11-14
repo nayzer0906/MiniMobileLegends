@@ -55,13 +55,13 @@
         <option value="$PROJECT_DIR$/Assets/_Scripts/AIController.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/ChooseTeamColor.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyChoosesColor.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyAIController.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Main Menu/Menu.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Main Menu/MenuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/Main Menu/EnemyColorMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Main Menu/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Main Menu/TeamColorMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/Main Menu/EnemyColorMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/EnemyAIController.cs" />
       </list>
     </option>
   </component>

@@ -16,8 +16,6 @@
           <e p="Jungle.cs" t="Include" />
           <e p="LookAtCamera.cs" t="Include" />
           <e p="Main Menu" t="Include">
-            <e p="ChooseTeamColor.cs" t="Include" />
-            <e p="EnemyChoosesColor.cs" t="Include" />
             <e p="EnemyColorMenu.cs" t="Include" />
             <e p="LoadScreen.cs" t="Include" />
             <e p="MainMenu.cs" t="Include" />
